@@ -42,6 +42,7 @@
     </div>
 
 <%--    new section need to be added here--%>
+<%--    new line added--%>
 
     <!-- Logout -->
     <div class="text-center">
