@@ -1,0 +1,6 @@
+Yoga,Every Sunday, at 10:00 AM
+Cardio,Sunday, 6:00 PM
+Strength Training,Monday, 7:00 AM
+Pilates,Thursday, 8:00 AM
+Zumba,Friday, 5:30 PM
+HIIT (High-Intensity Interval Training),Saturday, 6:45 AM

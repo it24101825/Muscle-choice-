@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+  <display-name>Gym Management System</display-name>
+
+  <!-- Admin Login -->
+  <servlet>
+    <servlet-name>AdminLoginServlet</servlet-name>
+    <servlet-class>com.jym.servlet.AdminLoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminLoginServlet</servlet-name>
+    <url-pattern>/adminLogin</url-pattern>
+  </servlet-mapping>
+
+  <!-- Member Login -->
+  <servlet>
+    <servlet-name>LoginMemberServlet</servlet-name>
+    <servlet-class>com.jym.servlet.LoginMemberServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginMemberServlet</servlet-name>
+    <url-pattern>/loginMember</url-pattern>
+  </servlet-mapping>
+
+  <!-- Member Registration -->
+  <servlet>
+    <servlet-name>RegisterMemberServlet</servlet-name>
+    <servlet-class>com.jym.servlet.RegisterMemberServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegisterMemberServlet</servlet-name>
+    <url-pattern>/registerMember</url-pattern>
+  </servlet-mapping>
+
+  <!-- Submit Contact Form -->
+  <servlet>
+    <servlet-name>SubmitContactServlet</servlet-name>
+    <servlet-class>com.jym.servlet.SubmitContactServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SubmitContactServlet</servlet-name>
+    <url-pattern>/submitContact</url-pattern>
+  </servlet-mapping>
+
+  <!-- Update Courses -->
+  <servlet>
+    <servlet-name>UpdateCoursesServlet</servlet-name>
+    <servlet-class>com.jym.servlet.UpdateCoursesServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateCoursesServlet</servlet-name>
+    <url-pattern>/updateCourses</url-pattern>
+  </servlet-mapping>
+
+  <!-- Add Trainer -->
+  <servlet>
+    <servlet-name>AddTrainerServlet</servlet-name>
+    <servlet-class>com.jym.servlet.AddTrainerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddTrainerServlet</servlet-name>
+    <url-pattern>/addTrainer</url-pattern>
+  </servlet-mapping>
+
+  <!-- Delete Trainer -->
+  <servlet>
+    <servlet-name>DeleteTrainerServlet</servlet-name>
+    <servlet-class>com.jym.servlet.DeleteTrainerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteTrainerServlet</servlet-name>
+    <url-pattern>/deleteTrainer</url-pattern>
+  </servlet-mapping>
+
+  <!-- Add Jym Update -->
+  <servlet>
+    <servlet-name>AddJymUpdateServlet</servlet-name>
+    <servlet-class>com.jym.servlet.AddJymUpdateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddJymUpdateServlet</servlet-name>
+    <url-pattern>/addJymUpdate</url-pattern>
+  </servlet-mapping>
+
+  <!-- Delete Jym Update -->
+  <servlet>
+    <servlet-name>DeleteJymUpdateServlet</servlet-name>
+    <servlet-class>com.jym.servlet.DeleteJymUpdateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteJymUpdateServlet</servlet-name>
+    <url-pattern>/deleteJymUpdate</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>DeleteMessageServlet</servlet-name>
+    <servlet-class>com.jym.servlet.DeleteMessageServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteMessageServlet</servlet-name>
+    <url-pattern>/deleteMessage</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ChangePasswordServlet</servlet-name>
+    <servlet-class>com.jym.servlet.ChangePasswordServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ChangePasswordServlet</servlet-name>
+    <url-pattern>/changePassword</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>UploadImageServlet</servlet-name>
+    <servlet-class>com.jym.servlet.UploadImageServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UploadImageServlet</servlet-name>
+    <url-pattern>/uploadImage</url-pattern>
+  </servlet-mapping>
+
+
+  <!-- Welcome Page -->
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+
+</web-app>
