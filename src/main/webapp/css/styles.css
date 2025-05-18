@@ -1,36 +1,40 @@
-/* General Styles */
-body {
+/* General Styles - Apply background to html and body */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #f9f9f9;
-    color: #333;
+    background: url('../backgroundImages/background.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff; /* white text for contrast */
 }
 
 /* Navigation Tabs */
 .nav-tabs .nav-link {
     border: none;
-    color: #495057;
+    color: #ffc107;
     transition: background 0.3s, color 0.3s;
 }
 
 .nav-tabs .nav-link.active {
-    background-color: #0d6efd;
+    background-color: #dc3545;
     color: #fff !important;
     border-radius: 0.375rem 0.375rem 0 0;
 }
 
 .nav-tabs .nav-link:hover {
-    color: #0d6efd;
-    background-color: #e9ecef;
+    color: #000;
+    background-color: #ffc107;
     border-radius: 0.375rem 0.375rem 0 0;
 }
 
 /* Container */
 .container {
     max-width: 800px;
-    background: #ffffff;
+    background: rgba(42, 42, 42, 0.85); /* semi-transparent to show background */
     padding: 2rem;
     border-radius: 1rem;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 20px rgba(255, 193, 7, 0.2);
 }
 
 /* Buttons */
@@ -39,26 +43,31 @@ body {
     font-size: 1rem;
     border-radius: 2rem;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    color: #fff;
 }
 
+/* Primary button - now yellow */
 .btn-primary {
-    background-color: #0d6efd;
+    background-color: #ffc107;
+    color: #000;
     border: none;
 }
 
 .btn-primary:hover {
-    background-color: #0b5ed7;
+    background-color: #e0a800;
     transform: scale(1.05);
 }
 
-.btn-secondary {
-    background-color: #6c757d;
+/* Logout Button - special case */
+.btn-logout {
+    background-color: #dc3545;
+    color: #fff;
     border: none;
 }
 
-.btn-secondary:hover {
-    background-color: #5a6268;
+.btn-logout:hover {
+    background-color: #bb2d3b;
     transform: scale(1.05);
 }
 
