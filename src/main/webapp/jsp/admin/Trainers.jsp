@@ -1,10 +1,19 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ page import="com.jym.dao.TrainerDAO, java.util.List" %>
+<%@ page import="com.jym.trainerManagement.dao.TrainerDAO, java.util.List" %>
 <html>
 <head>
     <title>Admin Dashboard - Trainers</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="${pageContext.request.contextPath}/css/styles.css" rel="stylesheet">
+    <style>
+        .nav-tabs-wrapper {
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+        .nav-tabs .nav-link {
+            white-space: nowrap;
+        }
+    </style>
 </head>
 <body>
 <%
@@ -26,26 +35,31 @@
     <% } %>
 
     <!-- Tab Navigation -->
-    <ul class="nav nav-tabs" id="adminTabs" role="tablist">
-        <li class="nav-item" role="presentation">
-            <a class="nav-link" href="${pageContext.request.contextPath}/jsp/admin/AdminDashboard.jsp">Members</a>
-        </li>
-        <li class="nav-item" role="presentation">
-            <a class="nav-link" href="${pageContext.request.contextPath}/jsp/admin/CourseUpdates.jsp">Course Updates</a>
-        </li>
-        <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="trainers-tab" data-bs-toggle="tab" data-bs-target="#trainers" type="button" role="tab" aria-controls="trainers" aria-selected="true">Trainers</button>
-        </li>
-        <li class="nav-item" role="presentation">
-            <a class="nav-link" href="${pageContext.request.contextPath}/jsp/admin/Messages.jsp">Messages</a>
-        </li>
-        <li class="nav-item" role="presentation">
-            <a class="nav-link" href="${pageContext.request.contextPath}/jsp/admin/JymUpdates.jsp">Jym Updates</a>
-        </li>
-        <li class="nav-item" role="presentation">
-            <a class="nav-link" href="${pageContext.request.contextPath}/jsp/admin/AdminUploadImage.jsp">Gallery</a>
-        </li>
-    </ul>
+    <div class="nav-tabs-wrapper mb-3">
+        <ul class="nav nav-tabs flex-nowrap" id="adminTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" href="${pageContext.request.contextPath}/jsp/admin/AdminDashboard.jsp">Members</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" href="${pageContext.request.contextPath}/jsp/admin/CourseUpdates.jsp">Course Updates</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="trainers-tab" data-bs-toggle="tab" data-bs-target="#trainers" type="button" role="tab" aria-controls="trainers" aria-selected="true">Trainers</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" href="${pageContext.request.contextPath}/jsp/admin/Messages.jsp">Messages</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" href="${pageContext.request.contextPath}/jsp/admin/JymUpdates.jsp">Jym Updates</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" href="${pageContext.request.contextPath}/jsp/admin/AdminUploadImage.jsp">Gallery</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" href="${pageContext.request.contextPath}/jsp/admin/AdminRenewalApproval.jsp">Renew requests</a>
+            </li>
+        </ul>
+    </div>
 
     <!-- Tab Content -->
     <div class="tab-content" id="adminTabsContent">

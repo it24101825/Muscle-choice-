@@ -1,5 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ page import="com.jym.dao.TrainerDAO, java.util.List" %>
+<%@ page import="com.jym.trainerManagement.dao.TrainerDAO, java.util.List" %>
 <html>
 <head>
   <title>Gym Management System - Trainers</title>
